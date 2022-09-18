@@ -319,7 +319,7 @@ public void CheckEngineerBuildings(int client)
 		else
 			TeleporterExitHealthIsFull[client] = true;
 	}
-	else if (m_hasTeleporterEnterWaypoints && m_hasTeleporterExitWaypoints && !WantsBuildSentryGun[client] && !WantsBuildDispenser[client] && !WantsBuildTeleporterEnter[client])
+	else if (m_hasTeleporterEnterWaypoints && m_hasTeleporterExitWaypoints && !WantsBuildSentryGun[client] && !WantsBuildDispenser[client] && !WantsBuildTeleporterEnter[client] && SentryIsMaxLevel[client] && DispenserIsMaxLevel[client])
 		WantsBuildTeleporterExit[client] = true;
 	else
 		WantsBuildTeleporterExit[client] = false;
